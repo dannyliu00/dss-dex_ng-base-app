@@ -1,0 +1,37 @@
+<!-- Header -->
+<dex-header></dex-header>
+<!-- Menu -->
+<!--<dex-menu></dex-menu>-->
+<div class="container-full">
+    <section class="cntr-main-wrapper">
+        <div class="cntr-main-content" >
+            <div class="row">
+                <!-- Page title -->
+                <div class="col-sm-12">
+                    <h2 translate>{{pageTitle}}</h2>
+                </div>
+                <div class="col-sm-12">
+                    <tabs></tabs>
+                    <div class="tab-pane" >
+                        <h1>App-level configuration</h1>
+                        <p>The title found in the center of the page header should be changed in src/main/webapp/scripts/app.js.  Specifically, the line that reads
+<pre>
+    .constant('appTitle', 'Polaris Angular App')       <-- changes the title in the center of the page header
+    .constant('roleUrl', '/npoadmin/role')             <-- relative url where the user's role is retrieved from
+    .constant('attributeUrl', '/npoadmin/attributes')  <-- relative url where the application attributes are retrieved from
+    .constant('appTabs', [
+        {id: 'tab1', desc: 'Page Tab 1', url: 'url', isActive: 'active'},
+        {id: 'tab2', desc: 'Page Tab 2', url: 'url', isActive: ''},
+        {id: 'tab3', desc: 'Page Tab 3', url: 'url', isActive: ''},
+        {id: 'tab4', desc: 'Page Tab 4', url: 'url', isActive: ''}
+    ])
+</pre>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- Footer -->
+<dex-footer></dex-footer>
