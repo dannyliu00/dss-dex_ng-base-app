@@ -16,7 +16,6 @@ describe('DefaultPageController', function() {
         var title = 'UT Title';
 
         ctrl = new DefaultPageController(scope, title);
-        $rootScope.$digest();
 
         expect(scope.pageTitle).toEqual(title);
     });

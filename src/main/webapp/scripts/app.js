@@ -1,6 +1,10 @@
 angular.module('dssApp', [
     'ngRoute',
     'blockUI',
+    'polaris.directives.dexHeader',
+    'polaris.directives.dexFooter',
+    'polaris.directives.tabs',
+    'appname.services.sampleDataCacheService',
     'appname.pages.defaultpage'
 ])
     .config(function ($routeProvider) {

@@ -3,21 +3,38 @@ var FilePatterns = {
 	gruntFiles: ['Gruntfile.js', 'file_patterns.js'],
 
 	thirdPartyJavascript: [
-        'bower_components/jquery/dist/jquery.js',
-        'bower_components/angular/angular.js',
-        'bower_components/angular-resource/angular-resource.js',
-        'bower_components/dex-attributes-resource/src/dex-attr-resource-module.js',
-        'bower_components/dex-attributes-service/src/dex-attr-service-module.js',
-        'bower_components/dex-role-resource/src/dex-role-resource-module.js',
-        'bower_components/dex-role-service/src/dex-role-service-module.js'
+        'src/main/webapp/bower_components/jquery/dist/jquery.js',
+        'src/main/webapp/bower_components/angular/angular.js',
+		'src/main/webapp/bower_components/angular-block-ui/angular-block-ui.js',
+		'src/main/webapp/bower_components/angular-datatables/dist/angular-datatables.js',
+		'src/main/webapp/bower_components/angular-resource/angular-resource.js',
+		'src/main/webapp/bower_components/angular-route/angular-route.js',
+        'src/main/webapp/bower_components/dex-attributes-resource/src/dex-attr-resource-module.js',
+        'src/main/webapp/bower_components/dex-attributes-service/src/dex-attr-service-module.js',
+		'src/main/webapp/bower_components/dex-footer/src/dex-footer.js',
+		'src/main/webapp/bower_components/dex-header/src/dex-header-module.js',
+        'src/main/webapp/bower_components/dex-role-resource/src/dex-role-resource-module.js',
+        'src/main/webapp/bower_components/dex-role-service/src/dex-role-service-module.js',
+		'src/main/webapp/bower_components/dex-tabs/src/dex-tabs-controller.js',
+		'src/main/webapp/bower_components/dex-tabs/src/dex-tabs-directive.js',
+		'src/main/webapp/bower_components/dex-tabs/src/dex-tabs-module.js',
+		'src/main/webapp/bower_components/dex-tabs-service/src/dex-tab-service.js'
 	],
 
     thirdPartyJavascriptForSpecs: [
-        'bower_components/angular-mocks/angular-mocks.js'
+		'src/main/webapp/bower_components/angular-mocks/angular-mocks.js'
     ],
 
     source: [
-		'src/main/webapp/scripts/**/*.js'
+		'src/main/webapp/scripts/**/*.js',
+
+		// move modules to the end
+		'!src/main/webapp/scripts/**/*-module.js',
+		'src/main/webapp/scripts/**/*-module.js'
+
+		// load app.js last
+		//'!src/main/webapp/scripts/app.js',
+		//'src/main/webapp/scripts/app.js'
 	],
 
 	specs: [
