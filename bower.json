@@ -17,7 +17,8 @@
         "es5-shim": "*",
         "jquery": "*",
         "jquery-ui": "*",
-        "json3": "*"
+        "json3": "*",
+        "animate.css": "*"
     },
     "devDependencies": {
         "angular-mocks": "1.2.16",
