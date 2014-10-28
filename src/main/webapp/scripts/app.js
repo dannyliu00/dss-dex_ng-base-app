@@ -4,6 +4,7 @@ angular.module('dssApp', [
     'polaris.directives.dexHeader',
     'polaris.directives.dexFooter',
     'polaris.directives.tabs',
+    'polaris.directives.translate',
     'appname.services.sampleDataCacheService',
     'appname.pages.defaultpage'
 ])
@@ -34,6 +35,9 @@ angular.module('dssApp', [
     .constant('appTitle', 'Polaris Angular App')
     .constant('roleUrl', '/npoadmin/role')
     .constant('attributeUrl', '/npoadmin/attributes')
+    .constant('menuUrl', '')
+    .constant('getTranslationUrl', '')
+    .constant('addTranslationUrl', '')
     .constant('appTabs', [
         {id: 'tab1', desc: 'Page Tab 1', url: 'url', isActive: 'active'},
         {id: 'tab2', desc: 'Page Tab 2', url: 'url', isActive: ''},
