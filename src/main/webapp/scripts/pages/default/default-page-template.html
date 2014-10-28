@@ -2,25 +2,27 @@
 <dex-header></dex-header>
 <!-- Menu -->
 <!--<dex-menu></dex-menu>-->
-<div class="container-full">
+<div class="container-full animated fadeIn">
     <section class="cntr-main-wrapper">
         <div class="cntr-main-content" >
             <div class="row">
                 <!-- Page title -->
                 <div class="col-sm-12">
-                    <h2 translate>{{pageTitle}}</h2>
+                    <h2>{{pageTitle}}</h2>
                 </div>
                 <div class="col-sm-12">
                     <tabs></tabs>
                     <div class="tab-pane" >
                         <section style="padding: 5px;">
                             <h1>App-level configuration</h1>
-                            <p>The title found in the center of the page header should be changed in src/main/webapp/scripts/app.js.  Specifically, the line that reads
+                            <p>The following properties need to be set specific to your app in src/main/webapp/app.js
 <pre>
-    .constant('appTitle', 'Polaris Angular App')          <-- changes the title in the center of the page header
-    .constant('roleUrl', '/url/path/to/role')             <-- relative url where the user's role is retrieved from
-    .constant('attributeUrl', '/url/path/to/attributes')  <-- relative url where the application attributes are retrieved from
-    .constant('menuUrl', '/url/path/to/menu')             <-- relative url where the application attributes are retrieved from
+    .constant('appTitle', 'Polaris Angular App')                     <-- changes the title in the center of the page header
+    .constant('roleUrl', '/url/path/to/role')                        <-- relative url where the user's role is retrieved
+    .constant('attributeUrl', '/url/path/to/attributes')             <-- relative url where the application attributes are retrieved
+    .constant('menuUrl', '/url/path/to/menu')                        <-- relative url where the application menu is retrieved
+    .constant('getTranslationUrl', '/url/path/to/get/translations')  <-- relative url where the application translations are retrieved
+    .constant('addTranslationUrl', '/url/path/to/add/translation')   <-- relative url where a new application translation is sent
     .constant('appTabs', [
         {id: 'tab1', desc: 'Page Tab 1', url: 'url', isActive: 'active'},
         {id: 'tab2', desc: 'Page Tab 2', url: 'url', isActive: ''},
@@ -34,7 +36,7 @@
                             <h1>Example of beginning development</h1>
                             <p>Typical Angular Single Page App (SPA) development at Polaris is highly data dependent.  To get
                             started most developers will need to retrieve data from some RESTful endpoint and produce that data
-                            on page.  Below are the high-level steps to get started:</p>
+                            on a page.  Below are the high-level steps to get started:</p>
                             <ol>
                                 <li>Create an Angular $resource within the src/main/webapp/scripts/resources directory.  If
                                 you don't have a real RESTful endpoint to retrieve data from, you can mock your data
