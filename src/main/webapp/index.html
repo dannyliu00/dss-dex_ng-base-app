@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="bower_components/datatables/media/css/jquery.dataTables.css" />
     <link rel="stylesheet" href="bower_components/angular-block-ui/dist/angular-block-ui.css" />
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="bower_components/animate.css/animate.css" />
     <!-- endbower -->
     <!-- endbuild -->
     <!-- build:css({.tmp,app}) styles/main.css -->
@@ -31,7 +32,7 @@
     <![endif]-->
 
     <!-- Add your site or application content here -->
-    <div ng-view></div>
+    <div ng-view class="animated fadeIn"></div>
 
     <!--[if lt IE 9]>
     <script src="bower_components/es5-shim/es5-shim.js"></script>
@@ -58,9 +59,9 @@
     <script src="bower_components/dex-footer/dist/dex-footer.min.js"></script>
     <script src="bower_components/dex-tabs-service/dist/dex-tab-service.min.js"></script>
     <script src="bower_components/dex-tabs/dist/dex-tabs.min.js"></script>
-    <script src="bower_components/dex-translate-resource/dist/translate-resource.min.js"></script>
-    <script src="bower_components/dex-translate-service/dist/translate-service.min.js"></script>
-    <script src="bower_components/dex-translate/dist/dex-translate.min.js"></script>
+    <script src="bower_components/dex-translate-resource/src/translate-resource-module.js"></script>
+    <script src="bower_components/dex-translate-service/src/translation-service.js"></script>
+    <script src="bower_components/dex-translate/src/dex-translate-module.js"></script>
     <script src="bower_components/jquery-ui/jquery-ui.js"></script>
     <script src="bower_components/json3/lib/json3.js"></script>
     <!-- endbower -->
@@ -70,6 +71,10 @@
     <script src="scripts/app.js"></script>
     <script src="scripts/pages/default/default-page-controller.js"></script>
     <script src="scripts/pages/default/default-page-module.js"></script>
+    <script src="scripts/resources/default/sample-rest-resource.js"></script>
+    <script src="scripts/resources/default/sample-rest-resource-module.js"></script>
+    <script src="scripts/services/default/sample-app-service.js"></script>
+    <script src="scripts/services/default/sample-app-service-module.js"></script>
     <!-- endbuild -->
 </body>
 </html>
