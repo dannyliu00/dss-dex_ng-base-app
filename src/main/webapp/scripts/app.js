@@ -33,8 +33,8 @@ angular.module('dssApp', [
         };
     })
     .constant('appTitle', 'Polaris Angular App')
-    .constant('roleUrl', '/npoadmin/role')
-    .constant('attributeUrl', '/npoadmin/attributes')
+    .constant('roleUrl', '/BaseNGApp/role')
+    .constant('attributeUrl', '/BaseNGApp/attributes')
     .constant('menuUrl', '')
     .constant('getTranslationUrl', '')
     .constant('addTranslationUrl', '')
