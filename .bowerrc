@@ -1,4 +1,4 @@
 {
-    "registry": "http://localhost:5678" ,
+    "registry": "http://md1lap316cd.polarisind.com:5678/" ,
     "directory": "src/main/webapp/bower_components"
 }
