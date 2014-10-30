@@ -35,22 +35,22 @@ public class AppSpringConfig {
 
 	@Bean(name = InternationalDataSource.DATASOURCE_BEAN_NAME)
 	public DataSource internationalDataSource() {
-		return JndiUtil.lookupDataSource("sql/PolarisDealersNPO");
+		return JndiUtil.lookupDataSource("sql/PolarisDealers");
 	}
 
 	@Bean(name = PolarisDealersExtensionDataSource.DATASOURCE_BEAN_NAME)
 	public DataSource polarisDealersExtensionDataSource() {
-		return JndiUtil.lookupDataSource("sql/PolarisDealersExtensionNPO");
+		return JndiUtil.lookupDataSource("sql/PolarisDealersExtension");
 	}
 
 	@Bean(name = PolarisDealersCommonDataSource.DATASOURCE_BEAN_NAME)
 	public DataSource polarisDealersCommonDataSource() {
-		return JndiUtil.lookupDataSource("sql/PolarisDealersCommonNPO");
+		return JndiUtil.lookupDataSource("sql/PolarisDealersCommon");
 	}
 
 	@Bean(name = PolarisDealersDataSource.DATASOURCE_BEAN_NAME)
 	public DataSource polarisDealersDataSource() {
-		return JndiUtil.lookupDataSource("sql/PolarisDealersNPO");
+		return JndiUtil.lookupDataSource("sql/PolarisDealers");
 	}
 	
 }
